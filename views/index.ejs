@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Female artists in the MoMA</title>
 </head>
 <body>
-    <h1>Henlo</h1>
+
+    <h1>MoM is thAt you?</h1>
+
+    <button id="new-artwork-button">nextplease</button>
+
+    <div id="artwork-container">
+        <h2 id="artwork-title"><%= artwork.title %></h2>
+        <p><strong>Artist:</strong> <span id="artwork-artist"><%= artwork.artistDisplayName %></span></p>
+        <p><strong>Medium:</strong> <span id="artwork-medium"><%= artwork.medium %></span></p>
+        <p><strong>Object:</strong> <span id="artwork-objectName"><%= artwork.objectName %></span> </p>
+        <p><strong>Created:</strong> <span id="artwork-objectDate"><%= artwork.objectDate %></span> </p>
+        
+
+        <% if (artwork.primaryImage) { %>
+            <img id="artwork-image" src="<%= artwork.primaryImage %>" alt="<%= artwork.title %>" style="max-width: 100%;">
+        <% } else { %>
+            <p id="artwork-image">No image available</p>
+        <% } %>
+        <p><strong>Artist bio:</strong> <span id="artwork-artistDisplayBio"><%= artwork.artistDisplayBio %></span></p>
+    </div>
+
+
+    <script src="/main.js"></script>
 </body>
 </html>
