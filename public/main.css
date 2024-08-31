@@ -1,0 +1,43 @@
+.inter-fontMom> {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+body {
+    background-color: #E0E031;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #FF0000;
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    margin: 0;
+}
+
+h1 {
+    font-size: 128px;
+}
+
+h2 {
+    font-size: 96px;
+}
+
+h3, p {
+    font-size: 48px;
+}
+
+p .date {
+font-size: 96px;
+}
+
+button {
+    background-color: #F1C543;
+   padding: 32px 64px;
+    border: #F1C543;
+    color: #E0E031;
+}

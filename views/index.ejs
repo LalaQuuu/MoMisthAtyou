@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Female artists in the MoMA</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <h1>MoM is thAt you?</h1>
+<header>
+    <h2>MoM is thAt you?</h2>
+    <h3>Female artists in the MoMA</h3>
 
     <button id="new-artwork-button">nextplease</button>
+</header>
+
 
     <div id="artwork-container">
-        <h2 id="artwork-title"><%= artwork.title %></h2>
+        <h1 id="artwork-title"><%= artwork.title %></h1>
         <p><strong>Artist:</strong> <span id="artwork-artist"><%= artwork.artistDisplayName %></span></p>
         <p><strong>Medium:</strong> <span id="artwork-medium"><%= artwork.medium %></span></p>
         <p><strong>Object:</strong> <span id="artwork-objectName"><%= artwork.objectName %></span> </p>
