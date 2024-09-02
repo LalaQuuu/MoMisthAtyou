@@ -11,30 +11,41 @@
 </head>
 <body>
 <header>
-    <h2>MoM is thAt you?</h2>
-    <h3>Female artists in the MoMA</h3>
+    <div class="heading">    
+        <h2>MoM is thAt you?</h2>
+        <h3>Female artists in the MoMA</h3>
+    </div>
 
-    <button id="new-artwork-button">nextplease</button>
+<div>
+    <button id="new-artwork-button">next please</button>
+</div>
+
 </header>
 
 
     <div id="artwork-container">
-        <h1 id="artwork-title"><%= artwork.title %></h1>
-        <p><strong>Artist:</strong> <span id="artwork-artist"><%= artwork.artistDisplayName %></span></p>
-        <p><strong>Medium:</strong> <span id="artwork-medium"><%= artwork.medium %></span></p>
-        <p><strong>Object:</strong> <span id="artwork-objectName"><%= artwork.objectName %></span> </p>
-        <p><strong>Created:</strong> <span id="artwork-objectDate"><%= artwork.objectDate %></span> </p>
-        
+        <div class="imageDiv">
+            <h1 id="artwork-title"><%= artwork.artistDisplayName %></h1>
+            <p> <span id="artwork-artist"><%= artwork.title %></span></p>
+            <p><strong>Medium:</strong> <span id="artwork-medium"><%= artwork.medium %></span></p>
+            <p><strong>Object:</strong> <span id="artwork-objectName"><%= artwork.objectName %></span> </p>
+        </div>
 
-        <% if (artwork.primaryImage) { %>
-            <img id="artwork-image" src="<%= artwork.primaryImage %>" alt="<%= artwork.title %>" style="max-width: 100%;">
-        <% } else { %>
-            <p id="artwork-image">No image available</p>
-        <% } %>
-        <p><strong>Artist bio:</strong> <span id="artwork-artistDisplayBio"><%= artwork.artistDisplayBio %></span></p>
+     
+<div class="imageDiv">
+
+    <% if (artwork.primaryImage) { %>
+        <img id="artwork-image" src="<%= artwork.primaryImage %>" alt="<%= artwork.title %>" style="max-width: 100%;">
+    <% } else { %>
+        <p id="artwork-image">No image available</p>
+    <% } %>
+
+    <p> <span id="artwork-objectDate"><%= artwork.objectDate %></span> </p>
+</div>
+
     </div>
 
-
+<footer> <p><strong>Artist bio:</strong> <span id="artwork-artistDisplayBio"><%= artwork.artistDisplayBio %></span></p></footer>
     <script src="/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.inter-fontMom> {
+.inter-fontMom {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -31,13 +31,56 @@ h3, p {
     font-size: 48px;
 }
 
-p .date {
-font-size: 96px;
+p {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    flex-direction: column;
 }
 
 button {
     background-color: #F1C543;
-   padding: 32px 64px;
+   padding: 64px 198px;
     border: #F1C543;
+    border-radius: 98px;
     color: #E0E031;
+font-size: 36px;
+}
+
+button:hover {
+    color: #FF0000;
+    font-style: italic;
+}
+
+#artwork-objectDate {
+    font-size: 96px;
+}
+
+#artwork-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imageDiv {
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+img {
+    height: 100px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
