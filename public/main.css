@@ -21,6 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     font-size: 128px;
+    line-height: 0.8;
+    padding-bottom: 30px;
 }
 
 h2 {
@@ -40,6 +42,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 1%;
 }
 
 .heading {
@@ -60,6 +63,17 @@ button:hover {
     font-style: italic;
 }
 
+#progress {
+    width: 100%;
+    padding-top: 10px;
+}
+
+#loadBar {
+    width: 5%;
+    height: 20px;
+    background-color: #FF0000;
+}
+
 #artwork-objectDate {
     font-size: 96px;
 }
@@ -76,7 +90,7 @@ button:hover {
 }
 
 img {
-    height: 100px;
+    height: 300px;
 }
 
 footer {

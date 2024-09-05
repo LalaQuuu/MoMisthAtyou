@@ -29,3 +29,7 @@ document.getElementById('new-artwork-button').addEventListener('click', async fu
         console.error('Error fetching new artwork:', error);
     }
 });
+
+function reloadPage() {
+    window.location.reload();
+}
